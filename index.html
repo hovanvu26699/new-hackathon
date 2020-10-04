@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>71-BếnTre</title>
+
+    <!-- Vendor Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- **************FireBase********************* -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+    <!-- *********************************** -->
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+            <div class="container nav-container">
+                <div class="cat-menu-wrap">
+                    <div class="cat-menu">
+                        71-BếnTre
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="zenax_main_menu">
+                    <ul class="navbar-nav menu-open">
+                        <li class=" current-menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="login.html">Đăng Ký</a>
+                        </li>
+                        <li class="">
+                            <a href="#">liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- banner area start -->
+    <div class="banner-area banner-area-3 m-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 align-self-xl-auto align-self-center">
+                    <div class="banner-inner banner-inner-3 text-center text-lg-left">
+                        <h2>Cùng nhau <span>chia sẻ</span> Sách<br>hay </h2>
+                        <p class="subtitle"><span>Free </span> ship</p>
+                        <a class="btn btn-basic-lg" href="#">Xem nhiều hơn</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 align-self-center">
+                    <div class="banner-thumb">
+                        <img src="assets/img/book/sach-1.jpg" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner area end -->
+
+    <!-- top-product area start -->
+    <div class="top-product-area common-pd">
+        <div class="container">
+            <div class="row" id="comic">
+                <div class="col-12">
+                    <div class="section-title-2">
+                        <h3 class="title">Truyên Tranh</h3>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/01.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Assistant</p>
+                            <h4 class="title"><a href="#">Sokim Ultra Dualx Putal PM5 Dusk Deporti</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$49.00</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/02.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Smart Muzi Lipattu Pokim 15 Zalim DX2 Laptol</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$96.50</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/03.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Universal Color Dual Pro S25 Rapata Loxin Duka</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$42.39</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/04.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Sokim Ultra Dualx Putal PM5 Dusk Deporti</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$21.00</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/06.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Yasi Pata H2S Rupal Dimapo Dual Color TX2</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$9.00</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/05.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Smart Muzi Lipattu Pokim 15 Zalim DX2 Laptol</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$7.89</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/07.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Sokim Ultra Dualx Putal PM5 Dusk Deporti</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$98.00</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-product-card">
+                        <div class="thumb">
+                            <img src="assets/img/product/home-4/08.png" alt="top-product">
+                        </div>
+                        <div class="product-card-details">
+                            <p class="categories">Gadgets</p>
+                            <h4 class="title"><a href=" #">Universal Color Dual Pro S25 Rapata Loxin Duka</a></h4>
+                            <div class="star-rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star-half-o"></i></span>
+                            </div>
+                            <div class="price">
+                                <span>$37.00</span>
+                            </div>
+                            <div class="product-cart">
+                                <span class="shop-cart-icon"><a href="#"><i class="las la-shopping-cart"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- top-product area end -->
+
+    <!-- trending-product area start -->
+    <div class="trending-product-area common-pd">
+        <div class="container">
+            <div class="row" id="economy">
+                <div class="col-12">
+                    <div class="section-title-2">
+                        <h3 class="title">Kinh Tế</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- trending-product area end -->
+
+    <!-- released-pruduct area start -->
+    <div class="released-product-area common-pd-2">
+        <div class="container">
+            <div class="row" id="history">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3 class="title">Lịch Sử</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- released-pruduct area end -->
+
+    <!-- released-pruduct area start -->
+    <div class="released-product-area common-pd-2">
+        <div class="container">
+            <div class="row" id="other">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3 class="title">Sách Khác</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- released-pruduct area end -->
+
+    <!-- subscribe area start -->
+    <div class="subscribe-area text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="title">Tìm Kiếm</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="subscribe-form">
+                        <input type="text" placeholder="Tìm Kiếm">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- subscribe area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 align-self-lg-center">
+                    </div>
+                    <div class="col-lg-4 text-lg-center">
+                        <div class="cat-menu-wrap">
+                            <div class="cat-menu">
+                                71-BếnTre
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- main js  -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

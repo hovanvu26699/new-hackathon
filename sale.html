@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sale | 71-BếnTre</title>
+    <!-- **************FireBase********************* -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+    <!-- *********************************** -->
+    <!-- Vendor Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+            <div class="container nav-container">
+                <div class="cat-menu-wrap">
+                    <div class="cat-menu">
+                        71-BếnTre
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="zenax_main_menu">
+                    <ul class="navbar-nav menu-open">
+                        <li class=" current-menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Sản Phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="#">liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- đăng bài -->
+    <div class="subscribe-area text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="title">đăng bán sách</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="subscribe-form">
+                        <input id="name" type="text" placeholder="tên sách">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="subscribe-form">
+                        <input id="gia" type="text" placeholder="Giá (đơn vị $)">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="subscribe-form">
+                        <input id="soluong" type="text" placeholder="Số Lượng">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <div class="subscribe-form topbar-cat-select">
+                        <select class="form-control" id="loai" name="sellist1">
+                            <option>comic</option>
+                            <option>economy</option>
+                            <option>history</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <input id="img" type="file" placeholder="hình">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8">
+                <div class="subscribe-form">
+                    <button onclick="Dang()">Đăng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- đăng bài -->
+
+
+    <!-- wishlist area start -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="wishlist-area card-2-area table-responsive pd-100">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hình</th>
+                                <th scope="col">Tên</th>
+                                <th scope="col"></th>
+                                <th class="text-lg-center" scope="col">Loại</th>
+                                <th class="text-lg-center" scope="col">Giá</th>
+                                <th class="text-lg-center" scope="col">Số Lượng</th>
+                                <th class="text-lg-center" colspan="2">Tùy Chỉnh</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list">
+                            <tr>
+                                <th scope="row"><img src="assets/img/card/01.png" alt="img"></th>
+                                <td colspan="2" class="item-name">2 con thằng lằn</td>
+                                <td class="price">truyện trang</td>
+                                <td class="price">$40.00</td>
+                                <td class="table-quantity">
+                                    <form>
+                                        <div class="quantity buttons_added">
+                                            <input type="button" value="-" class="minus">
+                                            <input type="number" class="input-text qty text" step="1" min="1"
+                                                max="10000" name="quantity" value="1">
+                                            <input type="button" value="+" class="plus">
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="price"> <button onclick="edit()">Sửa</button> </td>
+                                <td class="table-close-btn"> <button onclick="del()">Xóa</button> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="checkout-btn text-right">
+                        <a class="btn btn-basic-lg" href="#">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wishlist area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 align-self-lg-center">
+                    </div>
+                    <div class="col-lg-4 text-lg-center">
+                        <div class="cat-menu-wrap">
+                            <div class="cat-menu">
+                                71-BếnTre
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- <input type="button" id="test" value="test">
+    <span id="123">
+    </span> -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/saler.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
